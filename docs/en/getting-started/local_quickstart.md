@@ -15,12 +15,27 @@ This guide assumes you have already done the following:
 
 1. Installed [Python 3.9+][install-python] (including [pip][install-pip] and
    your preferred virtual environment tool for managing dependencies e.g. [venv][install-venv])
-1. Installed [PostgreSQL 16+ and the `psql` client][install-postgres]
+2. Installed [PostgreSQL 16+ and the `psql` client][install-postgres]
 
 [install-python]: https://wiki.python.org/moin/BeginnersGuide/Download
 [install-pip]: https://pip.pypa.io/en/stable/installation/
 [install-venv]: https://packaging.python.org/en/latest/tutorials/installing-packages/#creating-virtual-environments
 [install-postgres]: https://www.postgresql.org/download/
+
+### Cloud Setup (Optional)
+
+If you plan to use **Google Cloud’s Vertex AI** with your agent (e.g., using `vertexai=True` or a Google GenAI model), follow these one-time setup steps for local development:
+
+> 📚 Before you begin:
+> - [Install the Google Cloud CLI](https://cloud.google.com/sdk/docs/install)
+> - [Set up Application Default Credentials (ADC)](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment)
+
+#### Set your project and enable Vertex AI
+
+```bash
+gcloud config set project YOUR_PROJECT_ID
+gcloud services enable aiplatform.googleapis.com
+```
 
 ## Step 1: Set up your database
 
@@ -141,27 +156,6 @@ postgres` and a password next time.
     \q
     ```
 
-## Cloud Setup (Optional)
-
-If you plan to use **Google Cloud’s Vertex AI** with your agent (e.g., using `vertexai=True` or a Google GenAI model), follow these one-time setup steps for local development:
-
-> 📚 Before you begin:
-> - [Install the Google Cloud CLI](https://cloud.google.com/sdk/docs/install)
-> - [Set up Application Default Credentials (ADC)](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment)
-
-### 1. Set your project and enable Vertex AI
-
-```bash
-gcloud config set project YOUR_PROJECT_ID
-gcloud services enable aiplatform.googleapis.com
-```
-
-### 2. Update your agent code
-In files like hotel_agent.py, replace:
-```bash
-project="project-id"
-```
-> - with your actual Google Cloud project ID.
 
 ## Step 2: Install and configure Toolbox
 
