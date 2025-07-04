@@ -17,11 +17,6 @@ This guide assumes you have already done the following:
    your preferred virtual environment tool for managing dependencies e.g. [venv][install-venv])
 2. Installed [PostgreSQL 16+ and the `psql` client][install-postgres]
 
-[install-python]: https://wiki.python.org/moin/BeginnersGuide/Download
-[install-pip]: https://pip.pypa.io/en/stable/installation/
-[install-venv]: https://packaging.python.org/en/latest/tutorials/installing-packages/#creating-virtual-environments
-[install-postgres]: https://www.postgresql.org/download/
-
 ### Cloud Setup (Optional)
 
 If you plan to use **Google Cloud’s Vertex AI** with your agent (e.g., using `vertexai=True` or a Google GenAI model), follow these one-time setup steps for local development:
@@ -36,6 +31,11 @@ If you plan to use **Google Cloud’s Vertex AI** with your agent (e.g., using `
 gcloud config set project YOUR_PROJECT_ID
 gcloud services enable aiplatform.googleapis.com
 ```
+
+[install-python]: https://wiki.python.org/moin/BeginnersGuide/Download
+[install-pip]: https://pip.pypa.io/en/stable/installation/
+[install-venv]: https://packaging.python.org/en/latest/tutorials/installing-packages/#creating-virtual-environments
+[install-postgres]: https://www.postgresql.org/download/
 
 ## Step 1: Set up your database
 
