@@ -21,11 +21,10 @@ This guide assumes you have already done the following:
 
 If you plan to use **Google Cloud’s Vertex AI** with your agent (e.g., using `vertexai=True` or a Google GenAI model), follow these one-time setup steps for local development:
 
-> 📚 Before you begin:
-> - [Install the Google Cloud CLI](https://cloud.google.com/sdk/docs/install)
-> - [Set up Application Default Credentials (ADC)](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment)
+- [Install the Google Cloud CLI](https://cloud.google.com/sdk/docs/install)
+- [Set up Application Default Credentials (ADC)](https://cloud.google.com/docs/authentication/set-up-adc-local-dev-environment)
 
-#### Set your project and enable Vertex AI
+- Set your project and enable Vertex AI
 
 ```bash
 gcloud config set project YOUR_PROJECT_ID
