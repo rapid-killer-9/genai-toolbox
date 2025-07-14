@@ -15,7 +15,7 @@ This guide assumes you have already done the following:
 
 1. Installed [Python 3.9+][install-python] (including [pip][install-pip] and
    your preferred virtual environment tool for managing dependencies e.g. [venv][install-venv])
-2. Installed [PostgreSQL 16+ and the `psql` client][install-postgres]
+1. Installed [PostgreSQL 16+ and the `psql` client][install-postgres]
 
 ### Cloud Setup (Optional)
 
